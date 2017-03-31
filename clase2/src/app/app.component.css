@@ -1,0 +1,11 @@
+a {
+	display:inline-block;
+	width: 30%;
+	background-color: lightblue;
+	border: 1px solid black;
+	text-decoration: none;
+	font-family: georgia;
+}
+a:hover {
+	background-color: white;
+}
