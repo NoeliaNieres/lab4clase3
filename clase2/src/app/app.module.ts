@@ -9,7 +9,7 @@ import { PaginaNoEncontradaComponent } from './pagina-no-encontrada/pagina-no-en
 import { RouterModule, Routes } from '@angular/router'; 
 
 
-const RUTAS_DE_NAVEGACION: Routes = [{path:'login', component:LoginComponent}, {path:'paginaNoEncontrada', component:PaginaNoEncontradaComponent}];
+const RUTAS_DE_NAVEGACION: Routes = [{path:'login', component:LoginComponent},{path:'', redirectTo:'/login', pathMatch:'full'}, {path:'**', component:PaginaNoEncontradaComponent}];
 
 @NgModule({
   declarations: [

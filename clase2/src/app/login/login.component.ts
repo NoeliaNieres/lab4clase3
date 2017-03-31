@@ -6,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  constructor() { console.log('hola')}
 
-  constructor() { }
-
+	public usuario = {name:""};
+	clicked(event) {
+		console.log(event);
+	}
   ngOnInit() {
   }
 
